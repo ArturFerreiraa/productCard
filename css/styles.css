@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@600&family=Lato:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1E1E1E;
+    color: #271A45;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    width: 875px;
+    height: 498px;
+    border-radius: 10px;
+    background-color: #D9CDF7;
+}
+
+.productImage {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 223px;
+}
+
+#icon {
+    position: relative;
+    top: 35px;
+    left: 366px;
+    width: 33px;
+    height: 22.5px;
+    z-index: 2;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: column;
+    width: 281px;
+}
+
+.productInfo>.info>h1 {
+    font: 600 32px 'Crimson Pro', serif;
+}
+
+.productInfo>.info>p {
+    font-size: 10px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.productInfo>.info>p:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 12px 0 20px 0;
+}
+
+#addToCart {
+    font-size: 12px;
+    font-weight: 400;
+    width: 148px;
+    height: 32px;
+    border-radius: 2em;
+    color: #271A45;
+    background-color: #D9CDF7;
+    border: 0.5px solid #271A45;
+    transition: 0.2s ease;
+}
+
+#addToCart:hover {
+    cursor: pointer;
+    color: #D9CDF7;
+    background-color: #271A45;
+}
+
+@media (width < 750px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        max-height: 600px;
+        overflow: hidden;
+    }
+
+    #sofaImage {
+        width: 300px;
+        margin: 0 40px;
+    }
+
+    #icon {
+        position: relative;
+        z-index: 2;
+        left: 320px
+    }
+}
